@@ -27,7 +27,7 @@ This is a content-forward portfolio and personal brand site built with **TanStac
 
 The site tells the story of three pillars:
 
-1. **Canvassing** — A Celo-native research marketplace connecting African researchers with verified participants. Participants earn **GoodDollar (G$)** rewards through **Pax**; researchers run studies via **Rez**.
+1. **CNV** — A Celo-native research marketplace connecting African researchers with verified participants. Participants earn **GoodDollar (G$)** rewards through **Pax**; researchers run studies via **Rez**.
 2. **Celina** — A solo-built Celo agent stack: TypeScript SDK, MCP server, hosted endpoint, and **Celeste** wallet chat. 54 tools for DeFi, governance, GoodDollar UBI, and on-chain reads.
 3. **Salamander Tech Hub** — A Kenyan open-source tech hub co-founded by Andrew. Organized **Wajenzi Hack 1.0**, runs community programs, and supports builders across Kenya.
 

@@ -1,9 +1,14 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-router";
 import { getProject, getRelatedProjects } from "../../data/projects";
 import { PlaceholderImage } from "../../components/PlaceholderImage";
 import { Reveal } from "../../components/Reveal";
 
 export const Route = createFileRoute("/work/$slug")({
+  beforeLoad: ({ params }) => {
+    if (params.slug === "canvassing") {
+      throw redirect({ to: "/work/$slug", params: { slug: "cnv" } });
+    }
+  },
   loader: ({ params }) => {
     const project = getProject(params.slug);
     if (!project) throw notFound();

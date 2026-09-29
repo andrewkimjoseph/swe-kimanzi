@@ -9,7 +9,7 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Founder of Canvassing, creator of Celina, co-founder of Salamander Tech Hub. Building research marketplaces and AI agents on Celo.",
+          "Founder of CNV, creator of Celina, co-founder of Salamander Tech Hub. Building research marketplaces and AI agents on Celo.",
       },
       { property: "og:title", content: "About | Andrew Kim Joseph" },
       {
@@ -24,7 +24,7 @@ export const Route = createFileRoute("/about")({
 });
 
 const EXPERIENCE = [
-  { period: "2024 – present", role: "Founder & Builder", org: "Canvassing", desc: "Building a research marketplace and AI-agent tooling on Celo, from hackathon idea to funded product." },
+  { period: "2024 – present", role: "Founder & Builder", org: "CNV", desc: "Building a research marketplace and AI-agent tooling on Celo, from hackathon idea to funded product." },
   { period: "2026 – present", role: "Creator", org: "Celina", desc: "Solo-built an open-source SDK and MCP stack that gives AI agents a wallet on Celo." },
   { period: "2025 – present", role: "Co-Founder & Technical Lead", org: "Salamander Tech Hub", desc: "Co-founded and runs technical architecture for a Kenyan open-source builder community." },
   { period: "2023 – 2024", role: "Founding Engineer", org: "Partify", desc: "Built Partify end-to-end as founding engineer — Flutter mobile app, Stripe marketplace payouts, Firebase backend, real-time chat, and ops/admin web tools." },
@@ -37,7 +37,7 @@ const EDUCATION = [
 ];
 
 const HIGHLIGHTS = [
-  "Originated Canvassing at Build with Celo 7 (2024)",
+  "Originated CNV at Build with Celo 7 (2024)",
   "Prezenti grant recipient",
   "Celina registered on 8004scan (agent #9263)",
   "Celina listed in the official Celo MCP docs",
@@ -63,7 +63,7 @@ function AboutPage() {
         <span className="section-label-inverse w-fit">Story</span>
 
         <Reveal>
-          <PlaceholderImage assetId="photo-team-canvassing" label="Canvassing founders" aspect="video" />
+          <PlaceholderImage assetId="photo-team-canvassing" label="CNV founders" aspect="video" />
         </Reveal>
 
         <Reveal delay={0.05}>
@@ -72,7 +72,7 @@ function AboutPage() {
             <p className="mt-2 text-sm leading-relaxed">
               Andrew Kim Joseph is a Celo builder, Flutter and full-stack engineer, and
               founder of products at the intersection of research, rewards, and AI agents.
-              He co-founded <strong>Canvassing</strong> in 2024 with{" "}
+              He co-founded <strong>CNV</strong> in 2024 with{" "}
               <strong>Benedictors Ogada</strong> — a Kenyan developer-designer duo — and
               leads technical vision across mobile, web, and on-chain infrastructure.
             </p>
@@ -82,18 +82,18 @@ function AboutPage() {
         <Reveal delay={0.1}>
           <article className="card">
             <h2 className="font-display font-bold text-xl">
-              <Link to="/work/$slug" params={{ slug: "canvassing" }} className="underline underline-offset-4">
-                Canvassing
+              <Link to="/work/$slug" params={{ slug: "cnv" }} className="underline underline-offset-4">
+                CNV
               </Link>
             </h2>
             <p className="mt-2 text-sm leading-relaxed">
-              Canvassing came out of the <strong>Build with Celo 7</strong> hackathon,
+              CNV came out of the <strong>Build with Celo 7</strong> hackathon,
               where the theme was &ldquo;transform rewards and loyalty.&rdquo; About a
               year later, it evolved into an umbrella with two wings:
             </p>
             <ul className="mt-3 text-sm space-y-1 list-disc list-inside">
-              <li><strong>Canvassing Insights</strong> — research marketplace (Rez + Pax + public insights)</li>
-              <li><strong>Canvassing Intelligence</strong> — AI/agent tooling (Celina + Celeste)</li>
+              <li><strong>CNV Insights</strong> — research marketplace (Rez + Pax + public insights)</li>
+              <li><strong>CNV Intelligence</strong> — AI/agent tooling (Celina + Celeste)</li>
             </ul>
             <p className="mt-3 text-sm italic">
               Mission: Collect data, make it useful, and share it openly.

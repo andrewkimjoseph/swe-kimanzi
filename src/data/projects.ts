@@ -18,8 +18,8 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "canvassing",
-    name: "Canvassing",
+    id: "cnv",
+    name: "CNV",
     tagline: "Celo-native research marketplace — Insights + Intelligence wings.",
     description:
       "Umbrella platform connecting African researchers and founders with verified participants for surveys, product tests, and polls. Participants earn crypto rewards; researchers get structured feedback in 48–72 hours.",
@@ -35,11 +35,11 @@ export const projects: Project[] = [
     built: [
       "A two-sided marketplace: Rez for researchers, Pax for verified participants, plus public poll insights on the marketing site.",
       "GoodDollar (G$) as the default reward currency, with stablecoin payouts and instant withdrawals via MiniPay / GoodWallet.",
-      "On-chain stats, a G$→USDm quote API, and lead funnels that turn inbound research demand into booked studies.",
+      "On-chain stats and lead funnels that turn inbound research demand into booked studies.",
       "Adjacent products under the same umbrella — GoClaim, The Good Pax App, and Celina as the Intelligence wing.",
     ],
     technical: [
-      "Marketing site on Vite + React with prerendered SEO routes for public poll pages, Firebase + Supabase for insights, and Cloudflare Workers for reserve quotes.",
+      "Marketing site on Vite + React, hosted on Cloudflare Pages, with prerendered SEO routes for public poll pages and Firebase + Supabase for insights. USDm labels on stats come from Celina’s GoodDollar reserve quote.",
       "Dual-Firestore architecture: Rez writes tasks into the Pax store; researchers read completions filtered by their org.",
       "Celo smart-contract stack for gas sponsorship, wallet registry, task management, and cryptographic reward verification.",
       "Pax production wallet and claim transactions go through the Celina SDK, so Insights and Intelligence share one chain client. Operated by CNV Labs.",
@@ -70,11 +70,11 @@ export const projects: Project[] = [
     ],
     technical: [
       "Flutter + Riverpod + GoRouter, Firebase Auth/Functions, and in-app WebViews for task completion.",
-      "Solidity/Hardhat on Celo: PaxAccountV1, TaskManager V1–V3, plus Canvassing V2 contracts (gas sponsor, rewarder, task manager, wallet registry).",
+      "Solidity/Hardhat on Celo: PaxAccountV1, TaskManager V1–V3, plus CNV V2 contracts (gas sponsor, rewarder, task manager, wallet registry).",
       "Pimlico bundler + Privy server wallets for account abstraction; UUPS upgradeable contracts with a Hardhat test suite.",
       "Firebase Functions use `@andrewkimjoseph/celina-sdk` so wallet and claim transactions carry ERC-8021 attribution and are reported through Celina.",
     ],
-    related: ["canvassing", "rez", "good-pax-app"],
+    related: ["cnv", "rez", "good-pax-app"],
   },
   {
     id: "rez",
@@ -94,7 +94,7 @@ export const projects: Project[] = [
     built: [
       "Google-auth dashboard where Task Masters join an org, then create surveys, app tests, and polls from a multi-step wizard.",
       "Completion tracking with demographics and rewards flowing from Pax in near-real time.",
-      "Poll insights synced to Supabase and published on the public Canvassing insights site. Archived polls stay up with an Ended badge, and researchers can export row-level answers.",
+      "Poll insights synced to Supabase and published on the public CNV insights site. Archived polls stay up with an Ended badge, and researchers can export row-level answers.",
       "Admin surface for tasks, participants, and org onboarding.",
     ],
     technical: [
@@ -103,7 +103,7 @@ export const projects: Project[] = [
       "Supabase for aggregated poll insights; Algolia, Amplitude, Sentry, Resend, Brevo for leads, a Telegram ops notifier, and Recharts around the edges.",
       "Task types: fill-a-form, check-out-app, answer-poll, with video interviews planned.",
     ],
-    related: ["canvassing", "pax"],
+    related: ["cnv", "pax"],
   },
   {
     id: "celina",
@@ -132,7 +132,7 @@ export const projects: Project[] = [
       "Celo-native depth: Mento FX and Uniswap v4 pair lists and quotes, GoodDollar reserve (G$ ↔ USDm), Aave V3, governance, staking, Self Agent ID, AgentKarma.",
       "MIT-licensed meta-repo of eight packages, published on npm, with GitBook docs, OASF / EIP-8004 discovery, and a listing in the official Celo MCP docs. Hosted MCP, the marketing site, and Celeste run on Cloudflare Workers.",
     ],
-    related: ["celeste", "canvassing"],
+    related: ["celeste", "cnv"],
   },
   {
     id: "celeste",
@@ -219,7 +219,7 @@ export const projects: Project[] = [
       "Engagement-reward route gated on Pax Firestore eligibility.",
       "On-chain thegoodpax attribution tags in calldata.",
     ],
-    related: ["pax", "canvassing", "goclaim"],
+    related: ["pax", "cnv", "goclaim"],
   },
   {
     id: "partify",

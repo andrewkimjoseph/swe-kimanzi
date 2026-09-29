@@ -10,7 +10,7 @@ export const Route = createFileRoute("/work/")({
       {
         name: "description",
         content:
-          "Projects by Andrew Kim Joseph — Canvassing, Pax, Rez, Celina, Celeste, GoClaim, and more.",
+          "Projects by Andrew Kim Joseph — CNV, Pax, Rez, Celina, Celeste, GoClaim, and more.",
       },
       { property: "og:title", content: "Work | Andrew Kim Joseph" },
       {

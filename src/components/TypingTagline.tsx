@@ -3,7 +3,7 @@ import { useReducedMotion } from "motion/react";
 
 const PHRASES = [
   "Celo Builder",
-  "Canvassing Founder",
+  "CNV Founder",
   "Flutter + Web Engineer",
 ];
 

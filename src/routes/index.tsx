@@ -12,9 +12,9 @@ export const Route = createFileRoute("/")({
 
 const PILLARS = [
   {
-    id: "canvassing",
-    title: "Canvassing",
-    slug: "canvassing" as const,
+    id: "cnv",
+    title: "CNV",
+    slug: "cnv" as const,
     body: "A Celo-native research marketplace connecting African researchers with verified participants. Participants earn GoodDollar (G$) rewards through Pax (mobile app); researchers run studies via Rez (dashboard). Founded 2024 at Build with Celo 7.",
     asset: "logo-canvassing",
     cta: "Read case →",
@@ -84,7 +84,7 @@ function HomePage() {
               transition={{ delay: 0.3, duration: 0.5 }}
               className="text-base text-foreground/80 leading-relaxed"
             >
-              I co-founded Canvassing, built Celina from scratch, and co-lead
+              I co-founded CNV, built Celina from scratch, and co-lead
               Salamander Tech Hub in Kenya.
             </motion.p>
           </div>
