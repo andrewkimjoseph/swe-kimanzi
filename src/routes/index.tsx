@@ -23,7 +23,7 @@ const PILLARS = [
     id: "celina",
     title: "Celina",
     slug: "celina" as const,
-    body: "A solo-built Celo agent stack — TypeScript SDK, MCP server, hosted endpoint, and Celeste wallet chat. 87 tools for DeFi, governance, GoodDollar UBI, and on-chain reads (48 on the hosted MCP). Published on npm as @andrewkimjoseph/celina-sdk.",
+    body: "A solo-built Celo agent stack — TypeScript SDK, stdio MCP (116 tools), hosted MCP and A2A (50 tools), and Celeste wallet chat. DeFi, governance, GoodDollar, and on-chain reads. Published on npm as @andrewkimjoseph/celina-sdk.",
     asset: "logo-celina",
     cta: "Read case →",
   },

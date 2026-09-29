@@ -40,6 +40,7 @@ const HIGHLIGHTS = [
   "Originated Canvassing at Build with Celo 7 (2024)",
   "Prezenti grant recipient",
   "Celina registered on 8004scan (agent #9263)",
+  "Celina listed in the official Celo MCP docs",
   "8 published Celo Forum research reports",
   "Client work with Wayst Recycling, Minilend, Exion Finance",
   "100+ Salamander community members",
@@ -101,7 +102,9 @@ function AboutPage() {
               Received support from <strong>Prezenti</strong> grants and partners with{" "}
               <strong>GoodDollar</strong>, using G$ as the default reward currency. Eight
               research reports published on the Celo Forum covering Nigeria, Kenya, and
-              South Africa.
+              South Africa. Pax production wallet ops go through the Celina SDK, so
+              Insights and Intelligence share one chain client, under the operating
+              company <strong>CNV Labs</strong>.
             </p>
           </article>
         </Reveal>
@@ -115,8 +118,8 @@ function AboutPage() {
             </h2>
             <p className="mt-2 text-sm leading-relaxed">
               Solo-built <strong>Celina</strong> — a Celo-native SDK and MCP stack that
-              gives LLMs and AI agents a wallet on Celo. The stack includes 87 MCP tools
-              on local stdio (48 on the hosted read-only endpoint), npm packages (
+              gives LLMs and AI agents a wallet on Celo. The stack includes 116 MCP tools
+              on local stdio (50 on the hosted MCP and A2A endpoints), npm packages (
               <code className="text-xs">@andrewkimjoseph/celina-sdk</code>,{" "}
               <code className="text-xs">@andrewkimjoseph/celina-mcp</code>), and{" "}
               <strong>Celeste</strong> as a wallet-signed DeFAI reference app.
